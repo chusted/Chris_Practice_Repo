@@ -1,0 +1,26 @@
+{
+  "name": "issue-manager",
+  "version": "(0.1.0)",
+  "authors": [
+    "Chris Hustedt <christopher.m.hustedt@ehi.com>"
+  ],
+  "description": "Learning Spring Boot - Issue Manager",
+  "main": "",
+  "moduleType": [
+    "amd"
+  ],
+  "license": "ASL",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "src/main/resources/public/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery-mobile-bower": "~1.4.5"
+  }
+}
