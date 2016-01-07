@@ -1,0 +1,17 @@
+<div>
+  <h1>{{username}}</h1>
+  {{error}}
+  <div>Issues: {{repo.open_issues}}</div>
+  <div>
+    <ul>
+      <li ng-repeat="contributor in contributors">
+        {{contributor.login}} 
+        <br>
+        Commits: {{contributor.contributions}}
+      </li>
+    </ul>
+  </div>
+  
+  <a href="#/user/{{username}}">Back to user</a>
+  <a href="#/main">Back to search</a>
+</div>
