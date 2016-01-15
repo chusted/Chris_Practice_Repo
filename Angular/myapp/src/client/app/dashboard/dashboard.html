@@ -1,0 +1,22 @@
+<section id="dashboard-view" class="mainbar">
+    <section class="matter">
+        <div class="container">
+            <form name="generateUrl" ng-submit="vm.generate(vm.name, vm.description)" class="form-centered">
+                <h2 class="form-centered-heading">Welcome</h2>
+                <label for="inputName" class="sr-only">Name</label>
+                <input type="text" id="inputName" data-ng-model="vm.name" class="form-control" placeholder="Name" required autofocus>
+                <label for="inputDescription" class="sr-only">Description</label>
+                <input type="text" id="inputDescription" data-ng-model="vm.description" class="form-control" placeholder="Description" required>
+                <button class="btn btn-lg btn-primary btn-block" type="submit">Generate</button>
+            </form>
+            <div ng-show="vm.url">
+                <div class="row centered">
+                    <input type="text" value="{{vm.path}}{{vm.url}}" readonly />
+                </div>
+                <div class="row centered">
+                    <a data-ng-model="vm.url" href="{{vm.url}}">Check it out!</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>
