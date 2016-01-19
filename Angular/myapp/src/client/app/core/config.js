@@ -13,8 +13,8 @@
     }
 
     var config = {
-        appErrorPrefix: '[HelloWorld Error] ',
-        appTitle: 'HelloWorld'
+        appErrorPrefix: '[Broke the build Error] ',
+        appTitle: 'Broke the build'
     };
 
     core.value('config', config);
